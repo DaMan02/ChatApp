@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Talkative</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">X4EnXlQteTbKfUxrnIVyZD8JU2RMKxKMrERJU7As</string>
+    <string name="back4app_client_key">z2bAwU3jLxJD5zIQNAUIhU11kqMSJNHoDZqWUx8f</string>
+    <string name="title_activity_signup">Create Account</string>
+    <!-- strings related to login/signup -->
+    <string name="user_name">Username</string>
+</resources>

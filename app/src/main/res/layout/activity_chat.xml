@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ead35e"
+    android:windowSoftInputMode="adjustPan"
+    android:id="@+id/root_view"
+    tools:context="com.dayal.talkative.activities.ChatActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:title="Manjeet"
+        android:id="@+id/name_toolbar"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="6dp"
+                app:civ_border_width="0dp"
+                app:civ_border_color="#fcfbfb"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:paddingStart="15dp"
+                    android:textSize="16sp"
+                    android:textColor="#fafafa" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="15dp"
+                    android:textSize="12sp"
+                    android:layout_margin="2dp"
+                    android:textColor="#fafafa"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical"
+        >
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+         <ListView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:transcriptMode="alwaysScroll"
+             android:id="@+id/listView"
+             />
+
+
+         </LinearLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="4dp"
+        >
+        <android.support.v7.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:cardCornerRadius="26dp"
+
+            android:id="@+id/cardView_type">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/emoji_btn"
+
+                android:layout_gravity="center_vertical"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true">
+                <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+                    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/edit_msg"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Type a message"
+                    android:textSize="18sp"
+                    android:layout_marginStart="50dp"
+                    android:textColor="#292929"
+                    emojicon:emojiconSize="30dp"
+                    android:gravity="center" />
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/attach"
+                    android:layout_marginStart="10dp"
+                   />
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/etext_camera"
+                    android:layout_marginStart="10dp"
+                    />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/send_fab"
+            app:fabSize="mini"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="6dp"
+
+            app:backgroundTint="@color/colorPrimary"
+
+            />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

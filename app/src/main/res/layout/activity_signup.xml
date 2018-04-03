@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#68fddbdb"
+    tools:context="com.dayal.talkative.activities.SignupActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="E-mail"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/username"
+       />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Create Password"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:layout_below="@id/email"
+        android:inputType="textPassword"
+      />
+
+        <com.dd.processbutton.iml.ActionProcessButton
+            android:id="@+id/signup_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:elevation="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="80dp"
+            android:text="@string/title_activity_signup"
+            android:textSize="20sp"
+            android:textAppearance="@style/TextStyle"
+            custom:pb_colorComplete="@color/green_complete"
+            custom:pb_colorNormal="@color/colorAccent"
+            custom:pb_colorPressed="@color/blue_pressed"
+            custom:pb_colorProgress="@color/purple_progress"
+            custom:pb_textComplete="Account created"
+            custom:pb_textProgress="Signing up"
+            android:layout_below="@id/password"
+            custom:pb_textError="Error !"
+            custom:pb_colorError="@color/red_error" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/textView"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50dp"
+                android:textSize="20sp"
+                android:textAppearance="@style/TextStyle"
+                android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>
